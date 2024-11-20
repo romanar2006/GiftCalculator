@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1"
+            fx:controller="com.example.demo.HelloController">
+    <VBox alignment="CENTER" prefHeight="365.0" prefWidth="353.0" spacing="10.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.topAnchor="0.0">
+        <Label text="Компания"/>
+        <ComboBox fx:id="companyComboBox" prefWidth="200"/>
+
+        <Label text="Подарок"/>
+        <ComboBox fx:id="giftComboBox" prefWidth="200"/>
+
+        <CheckBox fx:id="concertCheckBox" text="Концерт"/>
+        <CheckBox fx:id="loyalClientCheckBox" text="Постоянный клиент"/>
+
+        <Label fx:id="totalCostLabel" style="-fx-font-weight: bold;" text="Итого: 0.00"/>
+    </VBox>
+</AnchorPane>
